@@ -52,9 +52,15 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
   } else {
     api 'io.agora.rtc:iris-rtc:4.2.1-build.1'
-    api 'io.agora.rtc:full-sdk:4.2.1'
+//    api 'io.agora.rtc:full-sdk-basic:4.2.1'
 //    api 'io.agora.rtc:full-screen-sharing:4.2.1'
   }
+
+    implementation 'io.agora.rtc:full-rtc-basic:3.7.0.3'
+    implementation 'io.agora.rtc:full-ains:3.6.2'
+    implementation 'io.agora.rtc:full-jnd:3.7.0.3'
+    implementation 'io.agora.rtc:full-full-audio-format:3.6.2'
+    implementation "io.agora.rtc:full-super-resolution:3.7.0.3"
 }
 
 static boolean isDev(Project project) {
